@@ -1,0 +1,11 @@
+<template name="footer">
+  <view class="page-footer">
+    <view class="page-footer-title">客服热线：96968</view>
+    <view class="page-footer-title">产品介绍|常见问题</view>
+  </view>
+  <view class="page-footer-title">
+  <navigator style='background-color: pink;' 
+  open-type="redirect"
+  url="/pages/01_devNav/01_devNav" hover-class="navigator-hover">开发导航页!</navigator>
+  </view>
+</template>

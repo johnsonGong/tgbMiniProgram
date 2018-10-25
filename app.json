@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/01_devNav/01_devNav",
+    "pages/common/authorisation/authorisation",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/taxELoan/home/home"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "重庆三峡银行",
+    "navigationBarTextStyle": "black"
+  }
+}

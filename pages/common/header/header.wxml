@@ -1,0 +1,5 @@
+<template name="header">
+  <view class="page-header">
+    <image class='tgb-icon' mode='widthFix' src='../../assets/icons/logo.png'></image>
+  </view>
+</template>

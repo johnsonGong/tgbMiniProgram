@@ -1,0 +1,21 @@
+.page-header {
+  position: relative;
+  /* background-color: pink; */
+}
+.tgb-icon {
+    position: relative;
+    width: 130px;
+    height: 50rpx;
+  }
+.page-footer {
+  text-align: center;
+  /* background-color: skyblue; */
+}
+
+.comm-txt-line {
+  position: relative;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display:block;
+}

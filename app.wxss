@@ -1,0 +1,32 @@
+/* 导入weui 通用样式 */
+@import "pages/assets/wxss/weui.wxss";
+/* 导入 本项目样式 */
+@import "pages/assets/wxss/cqtgbMini.wxss";
+
+.page {
+  /* background-color: #F8F8F8; */
+  position: relative;
+  background-color: #ffe082;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+.page-container {
+  position: relative;
+  width:95%;
+  margin: 0 auto;
+  /* background-color: lightgreen; */
+  overflow: hidden;
+  /* padding: 0 30rpx; */
+}
+
+/**app.wxss**/
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}

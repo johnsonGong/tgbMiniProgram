@@ -1,0 +1,6 @@
+/* pages/01_devNav/01_devNav.wxss */
+.dev-nav-btn {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
