@@ -1,0 +1,6 @@
+<!--components/stepBar.wxml-->
+<view class="step-flex page-stepbar">
+    <view class="{{item.css}}" wx:key="{{index}}" wx:for="{{stepList}}">
+      {{item.txt}}
+    </view>
+  </view>

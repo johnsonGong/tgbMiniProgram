@@ -24,30 +24,34 @@ Page({
       },
       {
         name: '注册',
-        url: ''
+        url: 'taxELoan/regist/regist'
       },
       {
         name: '身份识别(证件+人脸)',
-        url: ''
+        url: 'common/identification/identification'
       },
       {
         name: '信息完善',
-        url: ''
+        url: 'taxELoan/infoFill/infoFill'
       },
       {
         name: '个税核实',
-        url: ''
+        url: 'taxELoan/taxCheck/taxCheck'
       },
       {
         name: '额度测算',
-        url: ''
+        url: 'taxELoan/caculate/caculate'
       },
       {
         name: '马上放款',
-        url: ''
+        url: 'taxELoan/loanForm/loanForm'
       },
       {
         name: '结束办理',
+        url: 'taxELoan/result/result'
+      },
+      {
+        name: '个人中心',
         url: ''
       }
     ]
@@ -127,7 +131,7 @@ Page({
     } else {
       pageUrl = '../' + pageUrl
       console.log('navPageTo --> 页面切换，pageUrl：' + pageUrl)
-      wx.redirectTo({
+      wx.navigateTo({
         url: pageUrl
       })
     }

@@ -1,11 +1,17 @@
 <template name="footer">
-  <view class="page-footer">
+  <!-- <view class="page-footer">
     <view class="page-footer-title">客服热线：96968</view>
     <view class="page-footer-title">产品介绍|常见问题</view>
-  </view>
-  <view class="page-footer-title">
-  <navigator style='background-color: pink;' 
-  open-type="redirect"
-  url="/pages/01_devNav/01_devNav" hover-class="navigator-hover">开发导航页!</navigator>
+  </view> -->
+  <!-- <view class="page-footer-title">
+    <navigator style='background-color: pink;' open-type="redirect" url="/pages/01_devNav/01_devNav" hover-class="navigator-hover">开发导航页!</navigator>
+  </view> -->
+  <!-- 备注: 原则上使用 weui样式 -->
+  <view class='weui-footer'>
+    <text class='weui-footer__text'>客服热线：96968</text>
+    <view class='weui-footer__links'>
+      <text class='weui-footer__link'>产品介绍</text>
+      <text class='weui-footer__link'>常见问题</text>
+    </view>
   </view>
 </template>

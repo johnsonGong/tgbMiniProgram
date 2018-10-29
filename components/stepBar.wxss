@@ -1,0 +1,53 @@
+/* components/stepBar.wxss */
+
+.step-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.step-flex__item {
+  -webkit-box-flex:1;
+  -webkit-flex:1;
+  flex:1;
+}
+
+/* 贷款步骤 */
+
+.page-stepbar {
+  position: relative;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  color: #3569ba;
+  background-color: #7fb5e1;
+}
+
+.page-stepbar .step-item {
+  /* position: relative; *//* margin-right: 5px; */
+  font-size: 30rpx;
+  text-align: center;
+  /* background-color: yellow;
+  border-right: 1px solid #000000; */
+  box-sizing: border-box;
+}
+
+.page-stepbar .step-item::after {
+  content: " -->";
+}
+
+.page-stepbar .step-item:last-child {
+  text-align: left;
+}
+
+.page-stepbar .step-item:last-child::after {
+  content: "     ";
+}
+
+.page-stepbar .done {
+  color: #e4e8eb;
+}
+
+.page-stepbar .active {
+  color: #fff;
+}

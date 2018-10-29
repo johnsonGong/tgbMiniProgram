@@ -1,0 +1,57 @@
+/* pages/taxELoan/loanForm/loanForm.wxss */
+.calculate-ct{
+    margin: 30rpx;
+    border: 1px solid #acd4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size:32rpx ;
+    color: #333;
+}
+.calculate-name{
+    padding:40rpx 20rpx;
+    background: #e5f8ff;
+    border-bottom: 1px solid #acd4f4;
+}
+.quota-info{
+    padding: 20rpx;
+    border-bottom: 1px solid #acd4f4;
+}
+.borrow-all{
+   height: 50rpx;
+   line-height: 50rpx;
+   border-radius: 3px;
+    border: 1px solid #acd4f4;
+    color: #2d97fa;
+    text-align: center;
+    font-size:26rpx;
+     padding:0 20rpx;
+     margin-right:20rpx;
+}
+.borrow-quota{
+  padding-top: 20rpx;
+}
+.borrow-alert{
+    margin: 25rpx 0;
+    padding: 0 20rpx;
+    font-size: 28rpx;
+    color: #fd2525;
+    line-height: 1.5;
+}
+
+.btn-line {
+  text-align: center;
+}
+
+.btn-txt {
+  color: #6d6d6d;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.btn-txt::after {
+  border: none;
+}
+
+.btn-txt.button-hover {
+  color: #4c4c4c;
+}

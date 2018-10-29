@@ -1,0 +1,32 @@
+/* pages/taxELoan/regist/regist.wxss */
+.user-short-info {
+  position: relative;
+  text-align: center;
+}
+
+.user-short-info .regist-title {
+  font-size: 50rpx;
+}
+
+.user-avatar {
+  position: relative;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 200rpx;
+}
+
+.weui-agree {
+  /* background-color: yellow; */
+  position: relative;
+}
+.agree-chk {
+  position: absolute;
+  left: 40rpx;
+  top: 50rpx;
+}
+
+.agree-tips {
+  position: relative;
+  text-align: left;
+  left: 80rpx;
+}

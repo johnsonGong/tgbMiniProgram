@@ -4,13 +4,14 @@
 @import "pages/assets/wxss/cqtgbMini.wxss";
 
 .page {
-  /* background-color: #F8F8F8; */
   position: relative;
-  background-color: #ffe082;
+  /* background-color: #ffe082; */
   height: 100%;
   font-size: 32rpx;
   line-height: 1.6;
+  padding-bottom: 10rpx;
 }
+
 .page-container {
   position: relative;
   width:95%;

@@ -1,1 +1,69 @@
 /* pages/taxELoan/home/home.wxss */
+.home-user-info {
+  position: relative;
+  padding: 10px;
+  height: auto;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+.home-user-info .user-avatar {
+  position: relative;
+  float: left;
+  top: 0px;
+  width: 100rpx;
+  margin-right: 10px;
+}
+.home-user-info .user-desc {
+  position: relative;
+  float: left;
+  width: 300rpx;
+  /* background-color: yellow; */
+}
+
+.home-user-info .user-qrcode {
+  position: relative;
+  float: right;
+  width: 130rpx;
+  height: 100rpx;
+  /* background-color: skyblue; */
+}
+.home-user-info .user-qrcode .qrcode-icon {
+  position: relative;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.home-user-info .user-qrcode .arrow-right{
+  position: absolute;
+  top: 50rpx;
+  right: 0rpx;
+}
+
+.home-ad {
+  position: relative;
+  height: 100px;
+  line-height: 100px;
+  background-color: yellow;
+  text-align: center;
+}
+
+.product-item {
+  position: relative;
+  text-align: center;
+  border: 5rpx #e2e2e2 solid;
+  padding: 10rpx 0;
+  margin-bottom: 10rpx;
+}
+
+.product-title {
+  font-size: 50rpx;
+  display: block;
+}
+
+.product-desc {
+  /* font-size: 40rpx; */
+  display: block;
+}
+.btn-appy {
+  margin-top: 10px;
+}

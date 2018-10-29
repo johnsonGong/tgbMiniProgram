@@ -4,12 +4,19 @@
     "pages/common/authorisation/authorisation",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/taxELoan/home/home"
+    "pages/taxELoan/home/home",
+    "pages/taxELoan/regist/regist",
+    "pages/common/identification/identification",
+    "pages/taxELoan/infoFill/infoFill",
+    "pages/taxELoan/taxCheck/taxCheck",
+    "pages/taxELoan/caculate/caculate",
+    "pages/taxELoan/loanForm/loanForm",
+    "pages/taxELoan/result/result"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "重庆三峡银行",
+    "navigationBarBackgroundColor": "#f4f4f4",
+    "navigationBarTitleText": "税e贷",
     "navigationBarTextStyle": "black"
   }
 }

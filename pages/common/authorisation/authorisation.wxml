@@ -20,4 +20,4 @@
   </view>
   <template is="footer" />
 </view>
-<view wx:else>TODO-TEMP</view>
+<view wx:else>loading...</view>

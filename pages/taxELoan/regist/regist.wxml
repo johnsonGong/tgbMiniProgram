@@ -1,0 +1,50 @@
+<!--pages/taxELoan/regist/regist.wxml-->
+<import src="../../common/header/header.wxml" />
+<view class='page'>
+  <template is="header" />
+  <view class='user-short-info'>
+    <text class='regist-title'>注册</text>
+    <view>
+      <image class='user-avatar' src="{{wxUserInfo.avatarUrl}}"></image>
+    </view>
+
+    <view class='weui-cells weui-cells_form'>
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <text class="weui-label">手机号</text>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" maxlength='11'></input>
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_vcode">
+        <view class="weui-cell__hd">
+          <text class="weui-label">验证码</text>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" maxlength='6'></input>
+        </view>
+        <view class="weui-cell__ft">
+          <button class="weui-vcode-btn">获取验证码</button>
+        </view>
+      </view>
+
+      <label class="weui-agree" for="agreeChk">
+        <checkbox id="agreeChk" class="agree-chk"></checkbox>
+        <view class='agree-tips'>
+          <text class="weui-agree__text">
+        阅读并同意
+          <text>《xxxx微信服务协议微信服务协议》</text>
+          </text>
+        </view>
+      </label>
+
+      <view class='weui-btn-area'>
+        <button type='primary' bindtap='bindSubmit'>确认</button>
+      </view>
+
+    </view>
+  </view>
+
+</view>

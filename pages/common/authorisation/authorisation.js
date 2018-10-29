@@ -2,6 +2,7 @@
  * pages/common/authorisation/authorisation.js
  * 
  * 权限判定页面.
+ * 【业务逻辑】
  * 进入小程序，首先判定是否已授权.
  * 已授权: 不等页面展示完毕，直接跳转至首页;
  * 未授权: 展示本页面内容.
@@ -204,9 +205,13 @@ Page({
    * 
    */
   saveUserInfo: function (infoData) {
-    wx.setStorage({
-      key: 'userInfo ',
-      data: infoData
-    })
+    console.log('%csaveUserInfo:' + JSON.stringify(infoData), 'background-color:yellow;')
+    // TODO-- 数据的读写方式必须一致? 同步/异步
+    // wx.setStorage({
+    //   key: 'userInfo ',
+    //   data: infoData
+    // })
+    // 备注: 最好使用同步方式
+    wx.setStorageSync('userInfo', infoData)
   }
 })

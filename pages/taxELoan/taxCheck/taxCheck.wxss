@@ -1,0 +1,70 @@
+/* pages/taxELoan/taxCheck/taxCheck.wxss */
+
+.chk-note {
+  position: relative;
+  padding-left: 15px;
+  margin-top: 15px;
+  box-sizing: border-box;
+}
+
+.chk-code-line {
+  background-color: #eee;
+}
+
+.tax-title {
+  color: #7cb5e2;
+  text-align: center;
+}
+
+.tax-tbl {
+  position: relative;
+  border: 1px solid #a5d6fd;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+}
+
+.tax-w-25 {
+  width: 25%;
+}
+
+.tax-w-12 {
+  width: 12.5%;
+}
+
+.tax-tbl-head {
+  position: relative;
+  background-color: #cbe5f9;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #a8d4f7;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.tax-tbl-th, .tax-tbl-td {
+  position: relative;
+  float: left;
+  height: 100%;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  border-right: 1rpx solid #a8d4f7;
+  text-align: center;
+}
+
+.tax-tbl-th:last-child, .tax-tbl-td:last-child {
+  border-right: none
+}
+
+.tax-tbl-tbody {
+  position: relative;
+}
+
+.tax-tbl-tr {
+  position: relative;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom: 1rpx solid #a8d4f7;
+}
+
+.tax-tbl-tr:last-child {
+  border-bottom: none;
+}

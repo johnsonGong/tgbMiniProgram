@@ -1,0 +1,57 @@
+<template name="stepbar">
+  <wxs module="initBar">
+    var stepList = [{
+        txt: "人脸识别",
+        css: ""
+      },
+      {
+        txt: "信息完善",
+        css: ""
+      },
+      {
+        txt: "个税核实",
+        css: ""
+      },
+      {
+        txt: "额度测算",
+        css: ""
+      }
+    ]
+
+    var getStep = function(num) {
+    console.log("num:" + num)
+      var tmpCss = "weui-flex__item step-item"
+      var len = stepList.length
+      for (var i = 0; i < len; i++) {
+        if (i < num && (num - i) === 1) {
+          stepList[i].css = tmpCss + " active"
+        } else if (i < num) {
+          stepList[i].css = tmpCss + " done"
+        } else {
+          stepList[i].css = tmpCss
+        }
+      }
+      return stepList;
+    }
+    module.exports.getStep = getStep
+  </wxs>
+
+
+  <!-- 贷款步骤进度条 -->
+  <!-- wxs 与 js 是 不同的\独立的作用域，无法共享数据.! -->
+  <view class="weui-flex page-stepbar">
+    <!-- <view class='weui-flex__item step-item done'>人脸识别</view>
+    <view class='weui-flex__item step-item  active'>信息完善</view>
+    <view class='weui-flex__item step-item'>个税核实</view>
+    <view class='weui-flex__item step-item'>额度测算</view> -->
+
+    <!-- <view class="weui-flex__item step-item" wx:key="{{index}}" wx:for="{{initBar.getStep}}">
+      {{item.txt}}
+    </view> -->
+<!-- <view>a{{num}}</view> -->
+    <view class="{{item.css}}" wx:key="{{index}}" wx:for="{{initBar.getStep(2)}}">
+      {{item.txt}}
+    </view>
+
+  </view>
+</template>

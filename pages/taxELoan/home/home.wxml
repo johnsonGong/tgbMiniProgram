@@ -3,7 +3,36 @@
 <import src="../../common/footer/footer.wxml" />
 
 <view class='page'>
-<template is="header" />
-税e贷--首页!
-<template is="footer" />
+  <template is="header" />
+  <!-- TODO 参考使用 weui, 基础组件 > panel. -->
+  <view class='home-user-info clearfix'>
+    <image class='user-avatar' mode='widthFix' src="{{wxUserInfo.avatarUrl}}"></image>
+    <view class='user-desc '>
+      <view>
+        <text>{{wxUserInfo.nickName}}</text>
+      </view>
+      <view>
+        <text>{{bankUserInfo.phone}}</text>
+      </view>
+    </view>
+
+    <view class='user-qrcode'>
+      <image class='qrcode-icon' mode='aspectFit' src="{{qrCode}}"></image>
+      <view class=' arrow-right weui-cell__ft_in-access'></view>
+    </view>
+  </view>
+  <view class='home-ad g-overflow page-container'>
+    <text>广告活动介绍</text>
+  </view>
+  <view class='home-product-list page-container'>
+    <view class='product-item' wx:key="{{index}}" wx:for="{{products}}" wx:for-item="product">
+     <text class='product-title'>{{product.name}}</text>
+      <text class='product-desc'>期限最长{{product.timeTerm}}年</text>
+      <text class='product-desc'>额度最高{{product.limit}}万</text>
+      <text class='product-desc'>随借随还</text>
+      <text class='product-desc'>秒升秒贷</text>
+      <button type='primary' size='mini' bindtap='bindApply' class='btn-appy'>马上申请</button>
+    </view>
+  </view>
+  <template is="footer" />
 </view>

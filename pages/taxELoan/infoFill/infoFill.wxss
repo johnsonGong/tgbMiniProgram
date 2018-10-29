@@ -1,0 +1,12 @@
+/* pages/taxELoan/infoFill/infoFill.wxss */
+
+
+/* 覆盖默认样式 */
+.weui-cell {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.weui-cell:before {
+   /* border-top: 1rpx solid red; */
+   left: 0;
+}
