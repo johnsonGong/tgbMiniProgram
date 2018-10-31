@@ -1,0 +1,46 @@
+<!--pages/taxELoan/home/home.wxml-->
+<import src="../../common/footer/footer.wxml" />
+<view class='page'>
+  <view class='home-ad'>
+    <image mode="widthFix" class='ad-img' src='{{adList[0]}}'></image>
+    <view class='short-info'>
+      <view class='info-box clearfix'>
+
+        <view class='info-item'>
+          <view class='highlight-word'>
+            30
+            <text class='highlight-unit'>万</text>
+          </view>
+          <view class='item-desc'>最高额度</view>
+        </view>
+
+        <view class='info-item'>
+          <view class='highlight-word'>
+            1
+            <text class='highlight-unit'>年</text>
+          </view>
+          <view class='item-desc'>最长期限</view>
+        </view>
+
+      </view>
+      <!-- 30万， 1年, short-info END -->
+    </view>
+  </view>
+  <!-- home-ad -- END -->
+  <view class='apply-btn-box'>
+    <button class='apply-btn' bindtap='bindApply'>马上申请</button>
+  </view>
+
+  <view class='product-desc-box'>
+    <view class='corner-lf-top'></view>
+    <view class='corner-rt-btm'></view>
+    <view class='desc-words'>
+      <view>"税e贷"是我行首款全流程、全线上信贷产品，实现客户 通过手机银行APP、三峡付APP、微信公众号自助申请、秒评秒贷、 循环额度、自助提款、随时还款。
+      </view>
+      <view>"税e贷"是我行首款全流程、全线上信贷产品，实现客户 通过手机银行APP、三峡付APP、微信公众号自助申请、秒评秒贷、 循环额度、自助提款、随时还款。
+      </view>
+    </view>
+  </view>
+
+  <template is="footer" />
+</view>

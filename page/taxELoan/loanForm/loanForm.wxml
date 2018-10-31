@@ -1,0 +1,85 @@
+<!--pages/taxELoan/loanForm/loanForm.wxml-->
+<view class='page'>
+  <!--pages/loan/loan.wxml-->
+  <view class='calculate-ct mt10'>
+    <view class='calculate-name '>
+      <view class='weui-cell'>
+        <view class="weui-cell__bd">6229 4502 0178 5713</view>
+        <view class="weui-cell__ft">张三</view>
+      </view>
+    </view>
+    <view class='quota-info'>
+      <view wx:for="{{loanInfo}}" wx:key="{{index}}">
+        <text class='mr15'>{{item.leftinfo}}:</text>
+        <text>{{item.rightinfo}}</text>
+      </view>
+    </view>
+    <view class='borrow-quota'>
+      <view class="weui-cell weui-cell_input weui-cell_vcode b-b">
+        <view class="weui-cell__hd">
+          <view class="weui-label">验证码</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入验证码" />
+        </view>
+        <view class="weui-cell__ft borrow-all">
+          全额借款
+        </view>
+      </view>
+      <view class="borrow-alert">借款金额大于20万，必须上传贷款用途证明材料：消费合同/协议等</view>
+      <view class="weui-cell">
+        <view>日利率：</view>
+        <view class='weui-cell__bd'>0.02%</view>
+        <view class='weui-cell__ft borrow-all' style='margin-right:0'>还款测算</view>
+      </view>
+      <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd weui-cell__hd_in-select-after">
+          <view class="weui-label">借款用途:</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker bindchange="bindUseChange" value="{{useIndex}}" range="{{use}}">
+            <view class="weui-select weui-select_in-select-after">{{use[useIndex]}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">交易密码：</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入交易密码" />
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view>到期日：</view>
+      <view class='weui-cell__bd'>2020年3月9日</view>
+    </view>
+  </view>
+  <checkbox-group bindchange="bindAgreeChange">
+    <label class="weui-agree" for="weuiAgree">
+      <view class="weui-agree__text">
+        <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+        <view class="weui-agree__checkbox-icon">
+          <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+        </view>
+        已阅读并接受
+        <navigator url="" class="weui-agree__link" style='color:#2d97fa'>《重庆三峡银行税e贷借款合同》、《重庆三峡银行借款用途声明书》</navigator>
+      </view>
+    </label>
+  </checkbox-group>
+
+  <!-- <view class="weui-btn-area">
+            <button class="btn main-btn" >确定</button>
+        </view> -->
+
+  <view class="weui-btn-area">
+    <button class='g-tgb-btn-primary g-mg-btm-15' bindtap='bindConfirm'>确认</button>
+    <button class='g-tgb-btn-primary g-mg-btm-15' bindtap='bindContactOffline'>不满意额度，线下联系</button>
+    <view class='btn-line'>
+    <button size='mini' class='btn-txt' bindtap='bindThinkMore'>想想再说</button>
+      <!-- <text class='btn-txt'>想想再说</text> -->
+    </view>
+  </view>
+
+</view>

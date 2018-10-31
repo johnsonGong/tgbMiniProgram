@@ -1,0 +1,28 @@
+<!--pages/01_devNav/01_devNav.wxml-->
+<view class='page'>
+  <text>pages/01_devNav/01_devNav.wxml</text>
+  <view>
+  <text>开发导航</text>
+  </view>
+  <view style='margin-bottom: 20px;'>
+  <button bindtap='cancelAuth'>取消授权</button>
+  </view>
+  
+  <view class='page-container'>
+    <!-- <button type="primary">页面主操作 Normal</button> -->
+    <button 
+    type="{{item.url !== '' ? 'primary': ''}}" 
+    size='mini'
+    class='dev-nav-btn' 
+    data-idx="{{index}}"
+    data-pageurl="{{item.url}}" bindtap='bindNavPageTo'
+    wx:key="{{index}}"
+    wx:for="{{pageList}}">
+    {{index}}-{{item.name}}
+    </button>
+  </view>
+
+  <view>
+  <view>1. 【2-营销首页】自定义分享，【3-注册】取消分享。</view>
+  </view>
+</view>

@@ -1,0 +1,69 @@
+<!--pages/common/personalCenter/personalCenter.wxml-->
+<view class='page page-personal'>
+
+  <view class=' info-line short-info clearfix'>
+    <view class='user-icon g-fl'>
+      <image class='user-avatar' mode='widthFix' src="{{wxUserInfo.avatarUrl}}"></image>
+    </view>
+    <view class='user-name-tel g-fl'>
+      <view>{{ wxUserInfo.nickName }}</view>
+      <view>{{bankUserInfo.phone }}</view>
+    </view>
+    <view class='g-fr user-qrcode clearfix'>
+      <image class='qrcode-icon' mode='aspectFit' src="{{qrCode}}"></image>
+      <view class=' arrow-right weui-cell__ft_in-access'></view>
+    </view>
+
+  </view>
+
+  <view class=' info-line sanxia-shell'>
+    <view>
+      我的三峡贝：
+      <text class='shell-count'> 10 </text>个
+    </view>
+    <button size='mini' class='g-fr g-btn-blue btn-reward'>马上兑奖</button>
+  </view>
+
+  <view class='info-line friends'>
+    <view class='friend-title'>
+      我推荐的小伙伴
+      <view class=' friend-arrow-rt weui-cell__ft_in-access'></view>
+    </view>
+    <view class='friend-list'>
+
+      <view class='friend-item clearfix'>
+        <image src="{{wxUserInfo.avatarUrl}}" class='g-fl friend-icon'></image>
+        <view class='g-overflow g-fl friend-name '>张三</view>
+        <view class='friend-desc'>
+          帮我赚
+          <text> 1 个 </text>三峡贝
+        </view>
+      </view>
+
+      <view class='friend-item clearfix'>
+        <image src="{{wxUserInfo.avatarUrl}}" class='g-fl friend-icon'></image>
+        <view class='g-overflow g-fl friend-name '>慕容·扎西·卓玛卓玛卓玛卓玛卓玛卓玛</view>
+        <view class='friend-desc'>
+          帮我赚
+          <text> 1 个 </text>三峡贝
+        </view>
+      </view>
+
+      <view class='friend-item clearfix'>
+        <image src="{{wxUserInfo.avatarUrl}}" class='g-fl friend-icon'></image>
+        <view class='g-overflow g-fl friend-name '>张三</view>
+        <view class='friend-desc'>
+          帮我赚
+          <text> 1 个 </text>三峡贝
+        </view>
+      </view>
+    </view>
+    <!-- 小伙伴列表-- friend-list -- END -->
+  </view>
+  <!-- 我推荐的小伙伴 -- END -->
+
+<view class='person-ad'>
+<image class='ad-img' mode="widthFix" src='{{adList[0]}}'></image>
+</view>
+
+</view>

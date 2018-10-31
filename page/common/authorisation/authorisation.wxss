@@ -1,0 +1,19 @@
+/* pages/common/authorisation/authorisation.wxss */
+.auth-tips {
+  position: relative;
+  text-align: center;
+}
+
+.auth-btn-line {
+  position: relative;
+  margin: 50px 0px;
+}
+
+.g-warn-btn {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(pink, red);
+  padding: 20rpx;
+  color: #ffffff;
+  border-radius: 10rpx;
+}

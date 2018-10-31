@@ -1,0 +1,28 @@
+<!--pages/common/authorisation/authorisation.wxml, 获取用户授权-->
+<import src="../header/header.wxml" />
+<import src="../footer/footer.wxml" />
+
+<view class='page' wx:if="{{isApplyUserInfo}}">
+  <!-- <template is="head" data="{{title: 'button'}}"/> -->
+  <template is="header" />
+  <view class='page-container'>
+    <view class='auth-tips'>
+      <icon type="{{iconList[times]}}" size="50" />
+      <view>
+        <text>请授权登陆重庆三峡银行小程序</text>
+      </view>
+    </view>
+    <view class='auth-btn-line'>
+      <button type="primary" bindgetuserinfo="applyAuth" open-type="getUserInfo">
+        允许授权
+      </button>
+    </view>
+    <view class='auth-btn-line' wx:if="{{times>0}}">
+      <navigator class='g-warn-btn' target="miniProgram" open-type="exit">
+        退出小程序
+      </navigator>
+    </view>
+  </view>
+  <template is="footer" />
+</view>
+<!-- <view wx:else>loading...</view> -->

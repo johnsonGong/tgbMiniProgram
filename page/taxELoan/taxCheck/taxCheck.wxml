@@ -1,0 +1,83 @@
+<!--pages/taxELoan/taxCheck/taxCheck.wxml-->
+<view class='page'>
+  <step-bar curren-step="3"></step-bar>
+
+  <!-- 获取授权码 -- START -->
+  <view class='g-tgb-box'>
+
+    <view class=' g-mg-btm-15'>
+      <view class='weui-cell  weui-cell_input weui-cell_vcode chk-code-line'>
+        <view class='weui-cell__hd'>
+          <label class="weui-label">授权码</label>
+        </view>
+        <view class='weui-cell__bd  g-txt-rt'>
+          <input value="{{authorisationCode}}" maxlength="6" class="weui-input" bindinput='bindAuthorisationCode' placeholder='请输入授权码'>
+          </input>
+        </view>
+        <view class='weui-cell__ft'>
+          <button class='weui-vcode-btn' bindtap='bindSendCode'>获取授权码</button>
+        </view>
+      </view>
+
+      <view class="g-note-info  chk-note">
+        网上税务局将向您尾号为 1234 的手机号码发送授权验证码，请注意查收。
+      </view>
+    </view>
+
+    <button class="{{authorisationCode.length > 0 ? 'g-tgb-btn-primary': 'g-tgb-btn-ng'}}" bindtap="bindGetTaxInfo">
+      验证
+    </button>
+
+  </view>
+  <!-- 获取授权码-END -->
+
+  <!-- 个税信息 -- START -->
+  <view class='g-tgb-box' wx:if="{{taxInfo !== null}}">
+    <view class='tax-title'>个税信息(20.16.1.1-2.17.12.31)</view>
+    <view class='tax-tbl g-mg-btm-15'>
+
+      <view class='tax-tbl-head clearfix'>
+        <view class='tax-tbl-th tax-w-12'>序号</view>
+        <view class='tax-tbl-th tax-w-25'>征收品目</view>
+        <view class='tax-tbl-th tax-w-25'>总收入额(元)</view>
+        <view class='tax-tbl-th tax-w-25'>应缴税额(元)</view>
+        <view class='tax-tbl-th tax-w-12'>操作</view>
+      </view>
+
+      <view class='tax-tbl-tbody'>
+        <view class='tax-tbl-tr clearfix'>
+          <view class='tax-tbl-td tax-w-12'>1</view>
+          <view class='tax-tbl-td tax-w-25'>工资薪金所得</view>
+          <view class='tax-tbl-td tax-w-25'>12000.00</view>
+          <view class='tax-tbl-td tax-w-25'>108.00</view>
+          <view class='tax-tbl-td tax-w-12'>详情</view>
+        </view>
+
+        <view class='tax-tbl-tr clearfix'>
+          <view class='tax-tbl-td tax-w-12'>2</view>
+          <view class='tax-tbl-td tax-w-25 g-overflow'>红利所得所得所得所得所得所得</view>
+          <view class='tax-tbl-td tax-w-25 g-overflow'>125555500.00</view>
+          <view class='tax-tbl-td tax-w-25'>108.00</view>
+          <view class='tax-tbl-td tax-w-12'>详情</view>
+        </view>
+
+        <view class='tax-tbl-tr clearfix'>
+          <view class='tax-tbl-td tax-w-12'>合计</view>
+          <view class='tax-tbl-td tax-w-25'>--</view>
+          <view class='tax-tbl-td tax-w-25 g-overflow'>55555555555.00</view>
+          <view class='tax-tbl-td tax-w-25 g-overflow'>108.00</view>
+          <view class='tax-tbl-td tax-w-12'>--</view>
+        </view>
+
+      </view>
+      <!-- tax-tbl-tbody END -->
+    </view>
+    <!-- tax-tbl END -->
+
+    <button class='g-tgb-btn-primary g-mg-btm-15' bindtap='bindConfirmBtn'>确认无误</button>
+    <button class='' bindtap='bindInfoErrorBtn'>信息有误</button>
+
+  </view>
+  <!-- 个税信息 -- END -->
+
+</view>
