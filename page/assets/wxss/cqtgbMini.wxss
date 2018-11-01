@@ -2,6 +2,10 @@
 
 /* 按钮 disable, #bbbbbb */
 
+/* 重置样式 */
+.weui-cells:after{
+  border-bottom: none;
+}
 /* *** *** *** *** *** */
 
 .page-header {
@@ -35,32 +39,55 @@
   color: #488fd6;
 }
 
+.g-form-line::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+  left: 15px;
+}
+
+/* 背景图片 */
+.g-bg-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 /* 按钮 OK*/
+
 .g-tgb-btn-primary, .g-tgb-btn-ng {
   letter-spacing: 2px;
 }
+
 .g-tgb-btn-primary {
   background: linear-gradient(#488edb, #376dc5);
   color: #fff;
 }
 
 .g-tgb-btn-primary.button-hover {
-  background: linear-gradient(#3565b3,#3565b3);
-  color: #eeeeee;
+  background: linear-gradient(#3565b3, #3565b3);
+  color: #eee;
 }
 
 /* 按钮 NG*/
+
 .g-tgb-btn-ng {
-  background: linear-gradient(#bbbbbb,  #9c9c9c);
+  background: linear-gradient(#bbb, #9c9c9c);
   color: #ececec;
 }
 
 .g-tgb-btn-ng.button-hover {
-  background: linear-gradient(#9c9c9c,  #9c9c9c);
+  background: linear-gradient(#9c9c9c, #9c9c9c);
   color: #dcdcdc;
 }
 
 /* 按钮: 蓝色小按钮, 如 【 马上兑奖 】 */
+
 .g-btn-blue {
   background-color: #d5eafe;
   color: #2d97fa;
@@ -74,9 +101,11 @@
 }
 
 /* 位置 */
+
 .g-mg-top-15 {
   margin-top: 15px;
 }
+
 .g-mg-btm-15 {
   margin-bottom: 15px;
 }
@@ -117,15 +146,3 @@
   white-space: nowrap;
   display: block;
 }
-
-
-
-/* temp 样式 */
-
-/* .weui-cell__hd {
-  background-color: yellow;
-}
-
-.weui-cell__bd {
-  background-color: lightgreen;
-} */

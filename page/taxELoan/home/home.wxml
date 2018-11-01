@@ -2,7 +2,7 @@
 <import src="../../common/footer/footer.wxml" />
 <view class='page'>
   <view class='home-ad'>
-    <image mode="widthFix" class='ad-img' src='{{adList[0]}}'></image>
+    <image mode="widthFix" class='g-bg-img' src='{{adList[0]}}'></image>
     <view class='short-info'>
       <view class='info-box clearfix'>
 
@@ -31,13 +31,17 @@
     <button class='apply-btn' bindtap='bindApply'>马上申请</button>
   </view>
 
-  <view class='product-desc-box'>
-    <view class='corner-lf-top'></view>
-    <view class='corner-rt-btm'></view>
-    <view class='desc-words'>
+  <view class='prduct-desc-top-bg'>
+    <image mode="widthFix" class='g-bg-img' src="/image/bg-apply-02.png"></image>
+</view>
+
+  <view class='product-desc-box '>
+    <view class='desc-words '>
       <view>"税e贷"是我行首款全流程、全线上信贷产品，实现客户 通过手机银行APP、三峡付APP、微信公众号自助申请、秒评秒贷、 循环额度、自助提款、随时还款。
       </view>
-      <view>"税e贷"是我行首款全流程、全线上信贷产品，实现客户 通过手机银行APP、三峡付APP、微信公众号自助申请、秒评秒贷、 循环额度、自助提款、随时还款。
+      <view>其产品要素、产品流程设计完全参照当下互联网线上贷款产品主流风格、风控要求，
+帮助我行新信贷系统网贷模块开发设计，
+对我行后续积极拓展互联网金融信贷业务奠定基础。
       </view>
     </view>
   </view>

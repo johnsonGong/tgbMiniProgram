@@ -71,7 +71,7 @@
   position: relative;
   width: 100%;
   margin-top: 150rpx;
-  margin-bottom: 100rpx;
+  margin-bottom: 30rpx;
 }
 
 .apply-btn {
@@ -91,12 +91,19 @@
   /* background-color: pink; */
 }
 
+.prduct-desc-top-bg {
+  position: relative;
+  top: 2rpx;
+  height: 128rpx;
+  width: 100%;
+}
+
 .product-desc-box {
   position: relative;
-  padding: 0 40rpx;
   margin-bottom: 70rpx;
   font-size: 26rpx;
-  color: #666666;
+  line-height: 50rpx;
+  background-color: #4da6f9;
 }
 
 .corner-lf-top {
@@ -121,7 +128,9 @@
 
 .desc-words {
   position: relative;
-  padding: 10rpx;
+  padding: 40rpx;
+  font-size: 26rpx;
+  color: #fff;
   text-align: justify;
   text-indent: 60rpx;
 }

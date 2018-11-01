@@ -21,18 +21,20 @@ Page({
       avatarUrl: '../../assets/icons/test-user.jpg'
     },
     formData: {
-      phone: '',
+      phone: '111',
       // 验证码
-      vCode: '',
+      vCode: '222',
       // 同意协议.
-      agreeFlg: ''
+      agreeFlg: false,
+      // 表单检查
+      validFlg: false
     }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
     var infoData = wx.getStorageSync('userInfo');
     this.setData({
       wxUserInfo: infoData
@@ -42,14 +44,14 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
     wx.showModal({
       title: '提示',
       content: '本页面隐藏【转发】功能!'
@@ -60,35 +62,35 @@ Page({
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   },
   /**
@@ -97,16 +99,36 @@ Page({
    * @author gonglong-20181026.
    * 
    */
-  bindSubmit: function () {
-    wx.showToast({
-      title: '注册成功!',
-      duration: 2000
-    });
-    setTimeout(function(){
-      wx.redirectTo({
-        url: '../../common/identification/identification',
+  bindSubmit: function() {
+    if (this.data.formData.agreeFlg) {
+      wx.showToast({
+        title: '注册成功!',
+        mask: true,
+        duration: 2000
+      });
+      setTimeout(function () {
+        wx.redirectTo({
+          url: '../../common/identification/identification',
+        })
+      }, 2000)
+    } else {
+      wx.showModal({
+        title: '操作提示',
+        content: '请填写完整信息!',
+        showCancel: false
       })
-    }, 2000)
-    
+    }
+
+
+  },
+  /**
+   * 同意协议.
+   * 
+   */
+  bindAgreeFlg: function () {
+    var tmpFlg = this.data.formData.agreeFlg
+    this.setData({
+      "formData.agreeFlg": !tmpFlg
+    })
   }
 })

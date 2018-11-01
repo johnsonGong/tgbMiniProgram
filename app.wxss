@@ -7,7 +7,7 @@
   position: relative;
   /* background-color: #ffe082; */
   height: 100%;
-  font-size: 32rpx;
+  font-size: 30rpx;
   line-height: 1.6;
   padding-bottom: 10rpx;
   background-color: #fff;

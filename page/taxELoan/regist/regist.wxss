@@ -1,18 +1,62 @@
 /* pages/taxELoan/regist/regist.wxss */
-.user-short-info {
+
+.weui-cells::before {
+  border-top: 1px solid transparent;
+}
+
+.weui-cell__bd {
+  padding-left: 30rpx;
+  text-align: left;
+}
+
+.regist-top {
   position: relative;
+  width: 100%;
+  height: 330rpx;
   text-align: center;
 }
 
-.user-short-info .regist-title {
-  font-size: 50rpx;
+.regist-top .regist-title {
+  font-size: 36rpx;
+  color: #333333;
 }
 
+.regist-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tgb-logo {
+  position: absolute;
+  top: 20rpx;
+  left: 40rpx;
+}
+
+.user-short-info {
+  position: absolute;
+  height: 210rpx;
+  width: 100%;
+  bottom: 0rpx;
+}
+
+.user-avatar-wrap {
+    position: relative;
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 auto;
+  border-radius: 150rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
 .user-avatar {
-  position: relative;
-  width: 200rpx;
-  height: 200rpx;
-  border-radius: 200rpx;
+  position: absolute;
+  left: 5rpx;
+  top: 5rpx;
+  width: 140rpx;
+  height: 140rpx;
+  box-sizing: border-box;
+  border-radius: 140rpx;
 }
 
 .weui-agree {
@@ -28,5 +72,24 @@
 .agree-tips {
   position: relative;
   text-align: left;
-  left: 80rpx;
+  font-size: 28rpx;
+  /* line-height: 100rpx; */
+}
+
+.agree-name {
+  color: #2d97fa;
+}
+
+.btn-txt {
+  background-color: transparent;
+  border-left: none;
+  color: #2d97fa;
+}
+
+.btn-txt:active {
+  color: #267ed2;
+}
+
+.btn-txt::after {
+  border: none;
 }
