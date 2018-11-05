@@ -1,0 +1,81 @@
+/* 1.对<button>新增背景颜色;  */
+/* 2.对<navigator>复用部分button样式 */
+
+/* 按钮 OK*/
+.tgb-btn-primary, .tgb-btn-ng {
+  letter-spacing: 2px;
+}
+
+.tgb-btn-primary {
+  background: linear-gradient(#488edb, #376dc5);
+  color: #fff;
+}
+
+.tgb-btn-primary.button-hover {
+  background: linear-gradient(#3565b3, #3565b3);
+  color: #eee;
+}
+
+/* 按钮 NG*/
+.tgb-btn-ng {
+  background: linear-gradient(#bbb, #9c9c9c);
+  color: #ececec;
+}
+
+.tgb-btn-ng.button-hover {
+  background: linear-gradient(#9c9c9c, #9c9c9c);
+  color: #dcdcdc;
+}
+
+/** 退出小程序, 将 <navigator open-type="exit"> **/
+.tgb-btn-warn {
+  background-color: #E64340;
+  color: #ffffff;
+}
+
+/* 复用 微信UI 的button样式 */
+.tgb-btn {
+position:relative;
+display:block;
+margin-left:auto;
+margin-right:auto;
+padding-left:14px;
+padding-right:14px;
+box-sizing:border-box;
+font-size:18px;
+text-align:center;
+text-decoration:none;
+line-height:2.55555556;
+border-radius:5px;
+-webkit-tap-highlight-color:transparent;
+overflow:hidden;
+}
+
+/* 按钮: 蓝色小按钮, 如 【 马上兑奖 】 */
+.tgb-btn-blue {
+  background-color: #d5eafe;
+  color: #2d97fa;
+}
+
+.tgb-btn-blue.button-hover {
+  background-color: #bdcfe0;
+  color: #2c8de8;
+}
+
+.tgb-btn-noborder::after {
+  border: none;
+}
+
+/* 纯文字的按钮 */
+.tgb-btn-txt {
+  background-color: transparent;
+  color: #2d97fa;
+}
+.tgb-btn-txt::after {
+  border: none;
+}
+.tgb-btn-txt.button-hover {
+  color: #2678c5;
+}
+
+

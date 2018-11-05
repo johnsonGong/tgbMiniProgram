@@ -1,0 +1,26 @@
+<!--page/common/identifyFace/identifyFace.wxml-->
+<view class='page'>
+  <step-bar curren-step="1"></step-bar>
+  <view class='face-title'>
+    人脸识别
+  </view>
+
+  <view class='scan-face-line'>
+    <view class='scan-face-wrap'>
+      <view class='corner-lt scan-corner'></view>
+      <view class='corner-lb scan-corner'></view>
+      <view class='corner-rt scan-corner'></view>
+      <view class='corner-rb scan-corner'></view>
+
+      <view class='scan-face'>
+        <image src="{{scanFaceImg}}" class='g-bg-img'></image>
+      </view>
+      
+    </view>
+    <view class='scan-tips'>请保持光线充足、脱帽、免冠</view>
+  </view>
+
+  <view class='tgb-box'>
+  <button class='tgb-btn-primary' bindtap='bindTakePhoto'>开始</button>
+  </view>
+</view>

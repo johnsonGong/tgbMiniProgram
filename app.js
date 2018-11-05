@@ -40,6 +40,7 @@ App({
       title: 'onShow',
       content: JSON.stringify(obj),
     })
+    wx.clearStorage()
   },
   globalData: {
     userInfo: null

@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "step-bar": "/components/stepBar"
+    "step-bar": "/components/stepBar/stepBar"
   }
 }

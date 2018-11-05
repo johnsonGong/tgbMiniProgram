@@ -9,7 +9,7 @@
     </view>
   </view>
 
-  <view class='g-tgb-box'>
+  <view class='tgb-box'>
     <view class='result-msg g-mg-btm-15'>
       请下载重庆三峡银行手机银行APP, 完成贷款还贷、再次借款等。
     </view>
@@ -34,7 +34,7 @@
     </view>
 
   </view>
-  <!-- g-tgb-box TODO --END -->
+  <!-- tgb-box TODO --END -->
 
   <view class='foot-logo'>
     <image class='tgb-logo' mode="widthFix" src='../../assets/icons/logo.png'></image>

@@ -18,7 +18,7 @@
       </button>
     </view>
     <view class='auth-btn-line' wx:if="{{times>0}}">
-      <navigator class='g-warn-btn' target="miniProgram" open-type="exit">
+      <navigator class='tgb-btn tgb-btn-warn' target="miniProgram" open-type="exit">
         退出小程序
       </navigator>
     </view>

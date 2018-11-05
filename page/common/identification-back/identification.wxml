@@ -1,0 +1,47 @@
+<!--pages/common/identification/identification.wxml-->
+<view class='page'>
+<step-bar curren-step="1"></step-bar>
+  <view class='weui-media-box weui-media-box_text id-card'>
+    <text class='weui-media-box__title'>身份证</text>
+
+    <view class='weui-flex upload-line'>
+      <view class='weui-flex__item upload-card'>
+        <image mode="aspectFit" class='card-icon' src='../../assets/icons/idcard_0.png'>
+        </image>
+        <text class='upload-desc'>请拍摄身份证人像面</text>
+      </view>
+
+      <view class='weui-flex__item upload-card'>
+        <image mode="aspectFit" class='card-icon' src='../../assets/icons/idcard_1.png'>
+        </image>
+        <text class='upload-desc'>请拍摄身份证国徽面</text>
+      </view>
+
+    </view>
+
+    <view class='card-info clearfix'>
+      <!-- <input type=''></input> -->
+      <text class='card-txt'>姓名</text>
+      <button class='upd-btn mini-btn' size='mini'>修改</button>
+    </view>
+    <view class='card-info clearfix'>
+      <input class='card-txt' type='' placeholder='身份证号'></input>
+      <!-- <text class='card-txt'>姓名</text> -->
+      <button class='upd-btn mini-btn' size='mini'>修改</button>
+    </view>
+
+  </view>
+
+  <view class='weui-media-box weui-media-box_text face-recognition'>
+    <text class='weui-media-box__title'>人脸识别</text>
+    <view class='face-info-box'>
+      <view class='face-tips'>
+        <text class='comm-txt-line'>请保持</text>
+        <text class='comm-txt-line'>光线充足、脱帽、免冠</text>
+      </view>
+      <view class='camera-btn'>
+        <button type="primary" bindtap='bindStartFaceIdentify'>开始</button>
+      </view>
+    </view>
+  </view>
+</view>

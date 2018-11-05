@@ -1,0 +1,10 @@
+.camera-box {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.camera-btn {
+  position: relative;
+  margin-bottom: 20rpx;
+}

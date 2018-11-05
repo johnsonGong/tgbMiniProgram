@@ -1,11 +1,9 @@
-/* 按钮 default, border: #bababa, color: #626262 */
-
-/* 按钮 disable, #bbbbbb */
-
 /* 重置样式 */
-.weui-cells:after{
+
+.weui-cells:after {
   border-bottom: none;
 }
+
 /* *** *** *** *** *** */
 
 .page-header {
@@ -26,9 +24,16 @@
 
 /* 全局样式 */
 
-.g-tgb-box {
+.tgb-box {
   margin: 15px;
   padding: 5px;
+  /* background-color: yellow; */
+}
+
+.tgb-box-todo {
+  margin: 120rpx;
+  padding: 40rpx;
+  background-color: yellow;
 }
 
 .g-note-info {
@@ -52,52 +57,11 @@
 }
 
 /* 背景图片 */
+
 .g-bg-img {
   position: relative;
   width: 100%;
   height: 100%;
-}
-
-/* 按钮 OK*/
-
-.g-tgb-btn-primary, .g-tgb-btn-ng {
-  letter-spacing: 2px;
-}
-
-.g-tgb-btn-primary {
-  background: linear-gradient(#488edb, #376dc5);
-  color: #fff;
-}
-
-.g-tgb-btn-primary.button-hover {
-  background: linear-gradient(#3565b3, #3565b3);
-  color: #eee;
-}
-
-/* 按钮 NG*/
-
-.g-tgb-btn-ng {
-  background: linear-gradient(#bbb, #9c9c9c);
-  color: #ececec;
-}
-
-.g-tgb-btn-ng.button-hover {
-  background: linear-gradient(#9c9c9c, #9c9c9c);
-  color: #dcdcdc;
-}
-
-/* 按钮: 蓝色小按钮, 如 【 马上兑奖 】 */
-
-.g-btn-blue {
-  background-color: #d5eafe;
-  color: #2d97fa;
-  border: 1px solid transparent;
-  border-radius: 50rpx;
-}
-
-.g-btn-blue.button-hover {
-  background-color: #bdcfe0;
-  color: #2c8de8;
 }
 
 /* 位置 */
@@ -145,4 +109,69 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   display: block;
+}
+
+/* 自定义表单 */
+
+.tgb-form {
+  position: relative;
+  /* background-color: pink; */
+  padding: 10rpx;
+}
+
+.tgb-form .tgb-cell {
+  position: relative;
+  /* background-color: yellow; */
+  /* margin-bottom: 20rpx; */
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.tgb-form .tgb-cell::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #e5e5e5;
+  /* border-bottom: 1px solid red; */
+  color: #e5e5e5;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  /* left: 15px; */
+  z-index: 2;
+  clear: both;
+}
+
+.tgb-form .tgb-cell .tgb-cell-hd {
+  position: relative;
+  width: 30%;
+  float: left;
+  padding-left: 20rpx;
+  /* background-color: pink; */
+  box-sizing: border-box;
+  color: #999999;
+}
+
+.tgb-form .tgb-cell .tgb-cell-bd {
+  position: relative;
+  float: left;
+  width: 70%;
+  height: 100%;
+  color: #666666;
+  /* background-color: skyblue; */
+  box-sizing: border-box;
+}
+
+.tgb-form .tgb-cell .tgb-input {
+  position: relative;
+  top: 10%;
+  line-height: 80rpx;
+  height: 80%;
+  /* background-color: yellow; */
 }

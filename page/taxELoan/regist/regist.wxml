@@ -50,7 +50,7 @@
     </label>
 
     <view class='weui-btn-area'>
-      <button class='{{formData.agreeFlg ? "g-tgb-btn-primary ": "g-tgb-btn-ng"}}' type='primary' bindtap='bindSubmit'>确定</button>
+      <button class='{{formData.agreeFlg ? "tgb-btn-primary ": "tgb-btn-ng"}}' type='primary' bindtap='bindSubmit'>确定</button>
     </view>
 
   </view>

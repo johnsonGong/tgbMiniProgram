@@ -1,6 +1,6 @@
-// pages/01_devNav/01_devNav.js
 /**
  * 开发-页面快速导航.
+ * pages/01_devNav/01_devNav.js
  * 
  * @author gonglong-20181025
  */
@@ -27,8 +27,9 @@ Page({
         url: 'taxELoan/regist/regist'
       },
       {
-        name: '身份识别(证件+人脸)',
-        url: 'common/identification/identification'
+        back: "common/identification/identification",
+        name: '身份识别(证件+人脸)-废弃',
+        url: ''
       },
       {
         name: '信息完善',
@@ -53,6 +54,26 @@ Page({
       {
         name: '个人中心',
         url: 'common/personalCenter/personalCenter'
+      },
+      {
+        name: '识别-身份证(新版)',
+        url: 'common/identifyCard/identifyCard'
+      },
+      {
+        name: '识别-人脸(新版)',
+        url: 'common/identifyFace/identifyFace'
+      },
+      {
+        name: '拍照',
+        url: 'common/camera/camera'
+      },
+      {
+        name: '二维码',
+        url: 'common/qrCode/qrCode'
+      },
+      {
+        name: '重构样式',
+        url: 'common/demoLayout/demoLayout'
       }
     ]
   },

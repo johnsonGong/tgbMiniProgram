@@ -1,0 +1,13 @@
+/* page/common/qrCode/qrCode.wxss */
+
+.color-square {
+  position: relative;
+  width: 30rpx;
+  height: 30rpx;
+  border: 1rpx solid transparent;
+}
+
+.input-color {
+  background-color: lightgrey;
+  margin: 10px 0;
+}

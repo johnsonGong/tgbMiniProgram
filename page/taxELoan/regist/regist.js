@@ -108,7 +108,7 @@ Page({
       });
       setTimeout(function () {
         wx.redirectTo({
-          url: '../../common/identification/identification',
+          url: '../../common/identifyCard/identifyCard',
         })
       }, 2000)
     } else {

@@ -12,7 +12,12 @@
     "page/taxELoan/caculate/caculate",
     "page/taxELoan/loanForm/loanForm",
     "page/taxELoan/result/result",
-    "page/common/personalCenter/personalCenter"
+    "page/common/personalCenter/personalCenter",
+    "page/common/identifyCard/identifyCard",
+    "page/common/identifyFace/identifyFace",
+    "page/common/camera/camera",
+    "page/common/qrCode/qrCode",
+    "page/common/demoLayout/demoLayout"
   ],
   "window": {
     "backgroundTextStyle": "light",

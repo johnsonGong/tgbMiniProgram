@@ -1,15 +1,15 @@
 /* 导入weui 通用样式 */
 @import "page/assets/wxss/weui.wxss";
 /* 导入 本项目样式 */
+@import "page/assets/wxss/tgb-button.wxss";
 @import "page/assets/wxss/cqtgbMini.wxss";
 
 .page {
   position: relative;
-  /* background-color: #ffe082; */
   height: 100%;
   font-size: 30rpx;
-  line-height: 1.6;
-  padding-bottom: 10rpx;
+  line-height: 60rpx;
+  /* padding-bottom: 10rpx; */
   background-color: #fff;
 }
 

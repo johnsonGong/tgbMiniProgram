@@ -2,7 +2,7 @@
 <view class='page page-infofill'>
   <step-bar curren-step="2"></step-bar>
 
-  <view class="g-tgb-box g-border">
+  <view class="tgb-box g-border">
     <view class='weui-cell  '>
       <view class='weui-cell__hd'>
         <label class="weui-label">姓名</label>
@@ -128,12 +128,12 @@
   </view>
 
 
-  <view class="g-tgb-box">
+  <view class="tgb-box">
     <view class="g-note-info g-mg-btm-15">注：我行将在重庆市地税官方平台电子税务局为您注册用户，并需要您核实本人个税信息，用以测算税e贷额度。</view>
-    <button wx:if="{{phone.length > 0}}" class='g-tgb-btn-primary g-mg-btm-15' bindtap='bindSubmitInfo'>
+    <button wx:if="{{phone.length > 0}}" class='tgb-btn-primary g-mg-btm-15' bindtap='bindSubmitInfo'>
       下一步
     </button>
-    <button wx:else class='g-tgb-btn-ng' bindtap='checkFormValid'>
+    <button wx:else class='tgb-btn-ng' bindtap='checkFormValid'>
       下一步
     </button>
 

@@ -74,8 +74,8 @@
         </view> -->
 
   <view class="weui-btn-area">
-    <button class='g-tgb-btn-primary g-mg-btm-15' bindtap='bindConfirm'>确认</button>
-    <button class='g-tgb-btn-primary g-mg-btm-15' bindtap='bindContactOffline'>不满意额度，线下联系</button>
+    <button class='tgb-btn-primary g-mg-btm-15' bindtap='bindConfirm'>确认</button>
+    <button class='tgb-btn-primary g-mg-btm-15' bindtap='bindContactOffline'>不满意额度，线下联系</button>
     <view class='btn-line'>
     <button size='mini' class='btn-txt' bindtap='bindThinkMore'>想想再说</button>
       <!-- <text class='btn-txt'>想想再说</text> -->

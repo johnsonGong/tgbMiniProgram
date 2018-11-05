@@ -1,0 +1,54 @@
+<!--page/common/identifyCard/identifyCard.wxml-->
+<view class='page'>
+  <!-- <step-bar curren-step="1"></step-bar> -->
+  <view class='card-title'>
+    请拍摄本人二代身份证照片
+  </view>
+
+  <view class='tgb-box photo-line clearfix'>
+
+    <view class='card-item card-zm' bindtap='bindTakePhoto'>
+      <image mode="aspectFit" data-type="zm" class='card-bg-icon' src='{{card.zm}}'></image>
+      <image class='camera-icon' src='../../assets/icons/camara.png'></image>
+      <view class='card-desc'>身份证人像面</view>
+    </view>
+
+    <view class='card-item card-fm' bindtap='bindTakePhoto'>
+      <image mode="aspectFit" data-type="fm" class='card-bg-icon' src='{{card.fm}}'></image>
+      <image class='camera-icon' src='../../assets/icons/camara.png'></image>
+      <view class='card-desc'>身份证国徽面</view>
+    </view>
+
+  </view>
+  <!-- photo-line  END -->
+
+  <view class='tgb-box card-info tgb-form'>
+    <view class='tgb-cell'>
+      <view class='tgb-cell-hd'>
+        姓名
+      </view>
+      <view class='tgb-cell-bd'>
+        <input placeholder='用户姓名' class='tgb-input'></input>
+      </view>
+    </view>
+
+    <view class='tgb-cell'>
+      <view class='tgb-cell-hd'>
+        身份证号到期
+      </view>
+      <view class='tgb-cell-bd'>
+        <input placeholder='yyyy/MM/dd' class='tgb-input'></input>
+      </view>
+    </view>
+
+  </view>
+  <!-- tgb-form END -->
+  <view class='tgb-box'>
+    <button type='primary' bindtap='bindCommit' 
+    class='tgb-btn-primary'>
+      确定
+    </button>
+  </view>
+
+
+</view>

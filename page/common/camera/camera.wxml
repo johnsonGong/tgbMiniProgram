@@ -1,0 +1,13 @@
+<!--page/common/camera/camera.wxml-->
+<view class='page'>
+  <camera device-position="{{position[changeCount]}}" flash="off" binderror="error" class='camera-box'></camera>
+  <!-- <camera device-position="front" flash="off" binderror="error"></camera> -->
+
+<view class='tgb-box'>
+<button class='camera-btn' type='primary' bindtap='takePhoto'>拍照</button>
+  <button class='camera-btn' type='primary' bindtap='changePostion'>切换摄像头(前后)</button>
+  <button class='camera-btn' type='primary' bindtap='bindUpload'>上传照片</button>
+  <image class='camera-btn' mode="widthFix" src="{{src}}"></image>
+</view>
+  
+</view>

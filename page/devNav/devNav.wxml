@@ -1,28 +1,27 @@
 <!--pages/01_devNav/01_devNav.wxml-->
 <view class='page'>
   <text>pages/01_devNav/01_devNav.wxml</text>
+
   <view>
-  <text>开发导航</text>
+    <text>开发导航</text>
   </view>
+
   <view style='margin-bottom: 20px;'>
-  <button bindtap='cancelAuth'>取消授权</button>
+    <button bindtap='cancelAuth'>取消授权</button>
   </view>
-  
+
   <view class='page-container'>
     <!-- <button type="primary">页面主操作 Normal</button> -->
-    <button 
-    type="{{item.url !== '' ? 'primary': ''}}" 
-    size='mini'
-    class='dev-nav-btn' 
-    data-idx="{{index}}"
-    data-pageurl="{{item.url}}" bindtap='bindNavPageTo'
-    wx:key="{{index}}"
-    wx:for="{{pageList}}">
-    {{index}}-{{item.name}}
+    <button type="{{item.url !== '' ? 'primary': ''}}" class='dev-nav-btn' data-idx="{{index}}" data-pageurl="{{item.url}}" bindtap='bindNavPageTo' wx:key="{{index}}" wx:for="{{pageList}}">
+      {{index}}-{{item.name}}
     </button>
   </view>
 
-  <view>
-  <view>1. 【2-营销首页】自定义分享，【3-注册】取消分享。</view>
+  <view class='page-container'>
+    <view>1. 【2-营销首页】自定义分享，【3-注册】取消分享。-2018/10/31</view>
+    <view>2.【3-注册】更新页面布局-2018/11/01</view>
+    <view>3.【11-识别身份证（新版）】页面布局 </view>
+    <view>4. 【13-拍照】并初步整合 身份证拍照</view>
   </view>
+
 </view>

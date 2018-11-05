@@ -3,7 +3,7 @@
   <step-bar curren-step="3"></step-bar>
 
   <!-- 获取授权码 -- START -->
-  <view class='g-tgb-box'>
+  <view class='tgb-box'>
 
     <view class=' g-mg-btm-15'>
       <view class='weui-cell  weui-cell_input weui-cell_vcode chk-code-line'>
@@ -24,7 +24,7 @@
       </view>
     </view>
 
-    <button class="{{authorisationCode.length > 0 ? 'g-tgb-btn-primary': 'g-tgb-btn-ng'}}" bindtap="bindGetTaxInfo">
+    <button class="{{authorisationCode.length > 0 ? 'tgb-btn-primary': 'tgb-btn-ng'}}" bindtap="bindGetTaxInfo">
       验证
     </button>
 
@@ -32,7 +32,7 @@
   <!-- 获取授权码-END -->
 
   <!-- 个税信息 -- START -->
-  <view class='g-tgb-box' wx:if="{{taxInfo !== null}}">
+  <view class='tgb-box' wx:if="{{taxInfo !== null}}">
     <view class='tax-title'>个税信息(20.16.1.1-2.17.12.31)</view>
     <view class='tax-tbl g-mg-btm-15'>
 
@@ -74,7 +74,7 @@
     </view>
     <!-- tax-tbl END -->
 
-    <button class='g-tgb-btn-primary g-mg-btm-15' bindtap='bindConfirmBtn'>确认无误</button>
+    <button class='tgb-btn-primary g-mg-btm-15' bindtap='bindConfirmBtn'>确认无误</button>
     <button class='' bindtap='bindInfoErrorBtn'>信息有误</button>
 
   </view>

@@ -1,0 +1,22 @@
+<!--page/common/demoLayout/demoLayout.wxml-->
+<view class='page'>
+  <view>1. 默认字体: font-size: 30rpx; color: #666666;</view>
+  <view>2. 自定义按钮: 可用(蓝色)，不可用(灰色)，黄色，文字，文字 + 边框</view>
+
+  <view class='tgb-box g-border'>
+    <view>按钮:</view>
+    <navigator class='tgb-btn-warn tgb-btn g-mg-btm-15' target="miniProgram" open-type="exit">
+      退出小程序
+    </navigator>
+    <button class='tgb-btn-primary g-mg-btm-15'>确定</button>
+    <button class='tgb-btn-ng g-mg-btm-15'>确定</button>
+    <button class='tgb-btn-blue tgb-btn-noborder' size='mini'>马上兑奖</button>
+    <button class='tgb-btn-blue tgb-btn-noborder' type="">确定</button>
+
+    <button class='tgb-btn-txt' size='mini'>获取验证码</button>
+    <button class='tgb-btn-txt'>获取验证码</button>
+
+
+  </view>
+
+</view>

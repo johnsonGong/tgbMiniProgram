@@ -1,0 +1,15 @@
+<!--page/common/qrCode/qrCode.wxml-->
+<view class='page page-container'>
+  <view>TEST-获取二维码-getWXACodeUnlimit</view>
+  <view>通过该接口生成的小程序码，永久有效，数量 "暂无" 限制</view>
+  <view class='color-desc'>
+    <view class='color-square' style='{{squareColor}}'></view>
+    <input class='input-color' value='{{color}}' placeholder='请输入颜色: 如 rgb(0, 0, 0)' bindblur='bindChangeColor'></input>
+  </view>
+  <view class='action-btn'>
+    <button bindtap='getWXcode' type='primary'>获取二维码</button>
+    <view>
+      squareColor: {{squareColor}}
+    </view>
+  </view>
+</view>
