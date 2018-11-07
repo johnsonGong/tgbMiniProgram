@@ -1,1 +1,6 @@
 /* page/common/demoLayout/demoLayout.wxss */
+.redpack-btn {
+  text-align: left;
+  position: relative;
+  width: 300rpx;
+}

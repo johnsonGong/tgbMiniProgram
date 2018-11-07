@@ -2,7 +2,8 @@
 /* 2.对<navigator>复用部分button样式 */
 
 /* 按钮 OK*/
-.tgb-btn-primary, .tgb-btn-ng {
+
+.tgb-btn-primary, .tgb-btn-ng, .tgb-btn-yellow {
   letter-spacing: 2px;
 }
 
@@ -17,6 +18,7 @@
 }
 
 /* 按钮 NG*/
+
 .tgb-btn-ng {
   background: linear-gradient(#bbb, #9c9c9c);
   color: #ececec;
@@ -28,30 +30,33 @@
 }
 
 /** 退出小程序, 将 <navigator open-type="exit"> **/
+
 .tgb-btn-warn {
-  background-color: #E64340;
-  color: #ffffff;
+  background-color: #e64340;
+  color: #fff;
 }
 
 /* 复用 微信UI 的button样式 */
+
 .tgb-btn {
-position:relative;
-display:block;
-margin-left:auto;
-margin-right:auto;
-padding-left:14px;
-padding-right:14px;
-box-sizing:border-box;
-font-size:18px;
-text-align:center;
-text-decoration:none;
-line-height:2.55555556;
-border-radius:5px;
--webkit-tap-highlight-color:transparent;
-overflow:hidden;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.55555556;
+  border-radius: 5px;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
 }
 
 /* 按钮: 蓝色小按钮, 如 【 马上兑奖 】 */
+
 .tgb-btn-blue {
   background-color: #d5eafe;
   color: #2d97fa;
@@ -67,15 +72,62 @@ overflow:hidden;
 }
 
 /* 纯文字的按钮 */
+
 .tgb-btn-txt {
   background-color: transparent;
   color: #2d97fa;
 }
+
 .tgb-btn-txt::after {
   border: none;
 }
+
 .tgb-btn-txt.button-hover {
-  color: #2678c5;
+  /* color: #2678c5; */
+  opacity: 0.7;
 }
 
+/* 首页: 马上申请;  黄色按钮. */
 
+.tgb-btn-yellow {
+  background: linear-gradient(to right, #fabe2d, #faa62d);
+  color: #fff;
+}
+
+.tgb-btn-yellow.button-hover {
+  background: linear-gradient(to right, #e09427, #e09427);
+}
+
+.tgb-btn-yellow::after {
+  border: none;
+}
+
+/* 按钮: 红包来了. 倒计时 */
+
+.tgb-btn-redpack {
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #fa5d2d;
+  color: #fff;
+  border-radius: 50rpx;
+}
+
+.tgb-btn-main {
+}
+
+.tgb-btn-main.button-hover {
+  opacity: 0.7;
+}
+
+.tgb-btn-count {
+  position: absolute;
+  right: 5px;
+  top: 5rpx;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fa5d2d;
+  background-color: #fedfd5;
+  border-radius: 50rpx;
+  text-align: center;
+}

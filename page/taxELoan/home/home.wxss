@@ -79,16 +79,6 @@
   width: 360rpx;
   height: 90rpx;
   line-height: 90rpx;
-  /* background-color: #fabe2d; */
-  color: #fff;
-  letter-spacing: 2px;
-  border: 1px solid transparent;
-  background: linear-gradient(to right, #fabe2d, #faa62d);
-}
-
-.apply-btn.button-hover {
-  background: linear-gradient(to right, #e09427, #e09427);
-  /* background-color: pink; */
 }
 
 .prduct-desc-top-bg {

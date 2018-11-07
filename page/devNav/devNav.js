@@ -32,7 +32,7 @@ Page({
         url: ''
       },
       {
-        name: '信息完善',
+        name: '信息完善-TODO',
         url: 'taxELoan/infoFill/infoFill'
       },
       {
@@ -72,8 +72,32 @@ Page({
         url: 'common/qrCode/qrCode'
       },
       {
-        name: '重构样式',
+        name: '重构样式,ing',
         url: 'common/demoLayout/demoLayout'
+      },
+      {
+        name: '产品介绍',
+        url: ''
+      },
+      {
+        name: '常见问题',
+        url: ''
+      },
+      {
+        name: '密码键盘',
+        url: ''
+      },
+      {
+        name: '查看协议-组件',
+        url: ''
+      },
+      {
+        name: '倒计时-工具',
+        url: ''
+      },
+      {
+        name: '退出页面-未通过审核等',
+        url: ''
       }
     ]
   },

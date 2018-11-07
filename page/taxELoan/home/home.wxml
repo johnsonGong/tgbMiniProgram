@@ -28,7 +28,7 @@
   </view>
   <!-- home-ad -- END -->
   <view class='apply-btn-box'>
-    <button class='apply-btn' bindtap='bindApply'>马上申请</button>
+    <button class='tgb-btn-yellow apply-btn' bindtap='bindApply'>马上申请</button>
   </view>
 
   <view class='prduct-desc-top-bg'>
