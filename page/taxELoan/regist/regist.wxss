@@ -27,11 +27,7 @@
   left: 0;
 }
 
-.tgb-logo {
-  position: absolute;
-  top: 20rpx;
-  left: 40rpx;
-}
+
 
 .user-short-info {
   position: absolute;

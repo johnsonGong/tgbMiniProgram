@@ -2,11 +2,36 @@
 App({
   onLaunch: function (obj) {
     // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+    // var logs = wx.getStorageSync('logs') || []
+    // logs.unshift(Date.now())
+    // wx.setStorageSync('logs', logs)
 
-    // 登录
+    this.getUserAuthSetting()
+  },
+  /**
+   * 小程序启动，或从后台进入前台显示时.
+   */
+  onShow: function (obj) {
+    console.log('onShow:' + JSON.stringify(obj))
+    // 用以获取 query, 后续设定营销关系。
+    this.query = obj.query;
+    wx.showModal({
+      title: '营销关系',
+      content: 'query:' + JSON.stringify(this.query),
+    })
+    // wx.clearStorage()
+  },
+  globalData: {
+    userInfo: null,
+    openid: null,
+    query: null
+  },
+  /**
+   * 获取用户权限设置数据，判定是否已授予指定权限: scope.userInfo;
+   *
+   */
+  getUserAuthSetting() {
+    // 获取登录凭证
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
@@ -32,17 +57,41 @@ App({
         }
       }
     })
+  },
+  /**
+   * 获取用户openId.(参考官方demo)
+   * lazy loading openid.
+   *
+   */
+  getUserOpenId(callback) {
+    const self = this
 
-  },
-  onShow: function (obj) {
-    console.log('onShow:' + JSON.stringify(obj))
-    wx.showModal({
-      title: 'onShow',
-      content: JSON.stringify(obj),
-    })
-    wx.clearStorage()
-  },
-  globalData: {
-    userInfo: null
+    if (self.globalData.openid) {
+      callback(null, self.globalData.openid)
+    } else {
+      wx.login({
+        success(data) {
+          wx.request({
+            url: openIdUrl,
+            data: {
+              code: data.code
+            },
+            success(res) {
+              console.log('拉取openid成功', res)
+              self.globalData.openid = res.data.openid
+              callback(null, self.globalData.openid)
+            },
+            fail(res) {
+              console.log('拉取用户openid失败，将无法正常使用开放接口等服务', res)
+              callback(res)
+            }
+          })
+        },
+        fail(err) {
+          console.log('wx.login 接口调用失败，将无法正常使用开放接口等服务', err)
+          callback(err)
+        }
+      })
+    }
   }
 })

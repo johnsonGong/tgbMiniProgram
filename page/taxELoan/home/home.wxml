@@ -3,6 +3,7 @@
 <view class='page'>
   <view class='home-ad'>
     <image mode="widthFix" class='g-bg-img' src='{{adList[0]}}'></image>
+    <image class='tgb-icon home-logo' mode='widthFix' src='../../assets/icons/logo-white.png'></image>
     <view class='short-info'>
       <view class='info-box clearfix'>
 

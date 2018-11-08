@@ -14,6 +14,11 @@
   height: 100%;
 }
 
+.home-logo {
+  position: absolute;
+  top: 0;
+  left: 40rpx;
+}
 .short-info {
   position: absolute;
   padding: 0 40rpx;

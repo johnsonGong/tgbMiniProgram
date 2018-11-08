@@ -17,6 +17,12 @@
   height: 50rpx;
 }
 
+.tgb-logo {
+  position: absolute;
+  top: 20rpx;
+  left: 40rpx;
+}
+
 .page-footer {
   text-align: center;
   /* background-color: skyblue; */
